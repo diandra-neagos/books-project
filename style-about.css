@@ -1,0 +1,120 @@
+/* COLOR PALETTE
+#2c2d34 - dark color
+#f2910a - orange
+#efd510 - mustard
+*/
+
+/* Global styles
+-----------------------------------------*/
+* {
+    color: #2c2d34;
+    
+}
+
+body
+
+
+
+/* About page - first section (quotes)
+----------------------------------------*/
+
+.about {
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+font-weight: 900;
+background-color: #f2910a ;
+text-shadow: 29px 11px 40px rgba(0 0 0 / 89%);
+letter-spacing: 2.5px;
+}
+
+.intro {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding-right: 300px;
+    padding-left: 300px;
+}
+
+.text-center {
+    padding: 50px 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+    
+}
+
+.blockquote p {
+    line-height: 1.3;
+    font-size: 16px;
+    font-style: oblique;
+}
+
+
+
+cite {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800!important;
+    font-style: normal;
+   
+
+}
+
+.container-mission-vision {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* About page - second section (pictures)
+----------------------------------------*/
+.container-mission-vision img {
+    width: 400px;
+    height: 250px;
+    box-shadow: 14px 15px 19px 1px rgba(0 0 0 / 50%);
+  
+}
+
+
+/* About page - third section (paragraph about us)
+----------------------------------------*/
+.paragraph-about-us {
+    width: 400px;
+    text-align: justify;
+    padding-top: 40px;
+    font-family:'Montserrat', sans-serif; 
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.container-social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+   
+}
+li {
+    padding: 10px 10px;
+    
+  
+}
+
+path {
+    color: #f2910a;
+}
+
+path:hover {
+    color: #2c2d34
+}
+
+
+/* About page - banner)
+----------------------------------------*/
+
+.banner img {
+    max-width: fit-content;
+    
+}
