@@ -1,0 +1,82 @@
+:root{
+    --dark:#2c2d34;
+    --yellow:#efd510;
+    --orange:#ffc107;
+}
+
+.dropdown-signin {
+    position: absolute;
+    margin-left:30%;
+    margin-top: 5%;
+    z-index: 1000;
+    font-size: 1rem;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+.nav-background-color{
+    background-color: var(--orange);
+    
+}
+
+.nav-text-color{
+    color:var(--dark);
+}
+
+.nav-text-color:hover, .down:hover{
+    color:teal;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.btn:hover {
+    background-color: teal;
+}
+ 
+.list{
+    padding-right: 20%;
+}
+
+.down{
+    color: var(--dark);
+}
+
+.thanks{
+    margin-top: 3%;
+}
+
+.special{
+    text-transform: uppercase;
+    margin-left: 28%;
+}
+
+
+.mobile-nav-toggle-icon {
+    position: absolute;
+    z-index: 9999;
+    width: 5rem;
+    aspect-ratio: 1;
+    display: block;
+}
+
+@media (max-width:35em){
+    .primary-navigation{
+        --gap: 1em;
+
+    position:fixed;
+    z-index: 1000;
+    inset:30% 0 0 0;
+
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2em;
+
+    transform: translateX(50%);
+    }
+}

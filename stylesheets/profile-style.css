@@ -1,0 +1,91 @@
+:root {
+  --dark: #2c2d34;
+  --yellow: #efd510;
+  --orange: #ffc107;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+}
+#icon {
+  border: none;
+  height: 200px;
+  align-items: center;
+}
+
+.container-profile,
+.container-right {
+  margin: 40px 0px;
+
+  width: 100vw;
+}
+
+.height-100 {
+  height: 100%;
+}
+#progress-bar-read {
+  background-color: var(--yellow);
+}
+#progress-bar-currently-read {
+  background-color: var(--orange);
+}
+#progress-bar-to-read {
+  background-color: var(--dark);
+}
+
+.header-text {
+  color: var(--dark);
+  border-bottom: 1px solid var(--dark);
+}
+
+div {
+  color: var(--dark);
+}
+
+button {
+  background-color: var(--orange);
+  border: none;
+  color: white;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.review {
+  font-size: 10px;
+  float: left;
+}
+
+.add {
+  font-size: 10px;
+  float: right;
+  padding: 0px 40px 0px 0px;
+}
+
+@media (max-width: 768px) {
+  button {
+    width: 100vw;
+  }
+  #review-box {
+    width: 100vw;
+  }
+
+  .add {
+    padding: 0px;
+  }
+}
+
+.user-name {
+  color: teal;
+}
+
+.nav-background-color {
+  background-color: var(--orange);
+}
+
+.nav-text-color {
+  color: var(--dark);
+}
