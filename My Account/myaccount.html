@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../stylesheets/profile-style.css" />
+    <link rel="stylesheet" href="../stylesheets/nav.css">
+
+    <!-- <style>
+      .nav-link {
+        color: #2c2d34 !important;
+      }
+      .btn-outline-success {
+        background-color: #ffc107 !important;
+        border: #ffc107 !important;
+      }
+    </style> -->
+    <title>Books-Project</title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg  nav-background-color">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/29/29302.png" width="20px" height="30px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active nav-text-color" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle nav-text-color " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Library
+              </a>
+              <ul class="dropdown-menu nav-background-color" aria-labelledby="navbarDropdown">
+
+                <li><a class="dropdown-item nav-link dropdown-toggle nav-text-color" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a></li>
+                  <li><a class="dropdown-item nav-text-color" href="#">Algorithmic and Programming </a></li>
+                  <li><a class="dropdown-item nav-text-color" href="#">Databased</a></li>
+                  <li><a class="dropdown-item nav-text-color" href="#">Graphics and Web</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item nav-text-color" href="#">My library</a></li>
+                </ul>  
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text-color" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text-color" href="#">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text-color" href="#"> Contact</a>
+            </li>
+          </ul>
+          
+          
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn " type="submit"><img src="https://cdn.icon-icons.com/icons2/2566/PNG/512/search_icon_153438.png" width="20px" height="20px"></button>
+          </form>
+
+          <ul class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-text-color" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src= "https://icon-library.com/images/my-account-icon/my-account-icon-3.jpg" width = "20px" ; height="20px">  My account
+            </a>
+            <ul class="dropdown-menu nav-background-color" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item nav-text-color" href="signin.html">Sign in</a></li>
+              <li><a class="dropdown-item nav-text-color" href="#">Privacy</a></li>
+              <li><a class="dropdown-item nav-text-color" href="#">My library</a></li>
+              <li><a class="dropdown-item nav-text-color" href="#">My friends</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item nav-text-color" href="#">Sign out</a></li>
+            </ul>
+          
+          
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid align-items-center container-profile">
+      <div class="row height-100">
+        <div class="col-md-5 offset-md-1 col-sm-12 my-auto">
+          <img
+            id="icon"
+            src="../images/Icon.png"
+            alt="UserId"
+            class="img-thumbnail"
+          />
+          <div class="col-md-5 offset-md-1 col-sm-12 my-auto user-name">USER NAME</div>
+        </div>
+
+        <div class="col-md-5 col-sm-12 text-center my-auto">
+          <div>ACTIVITY</div>
+
+          <div class="progress">
+            
+            <div
+              class="progress-bar "
+              role="progressbar"
+              style="width: 25%"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              id="progress-bar-read"
+            >READ</div>
+          </div>
+
+          <div class="progress">
+            
+            <div
+              class="progress-bar "
+              role="progressbar"
+              style="width: 50%"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              id="progress-bar-currently-read"
+            >CURRENTLY READING</div>
+          </div>
+          <div class="progress">
+            
+            <div
+              class="progress-bar "
+              role="progressbar"
+              style="width: 75%"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              id="progress-bar-to-read"
+            >TO READ</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid container-right">
+        <div class="row height-100">
+            <div class="col-md-5 offset-md-1 col-sm-12 my-auto">
+                <h6 class="header-text">BOOK REVIEWS</h6>
+                <p>No reviews have been added so far by the User.</p>
+            
+            
+                <h6 class="header-text">LEAVE A REVIEW</h6>
+                <form>  
+                    <label for="review-box" class="review">Review</label>
+                    <label for="review-box" class="add">Add Book/Author</label>
+                    </br>
+                    <textarea name="review-box" id="review-box" cols="50" rows="5"></textarea>
+                    </br>
+                    <button>SUBMIT</button>
+                </form>
+            </div>
+        
+            <div class="col-md-5 col-sm-12 my-auto">
+                
+                <div>
+                    <h6 class="header-text">FOLLOWING</h6>
+                    <p>No users have been followed. </p>
+                    <h6 class="header-text">FOLLOWING</h6>
+                    <p>No users are following you. </p>
+                </div>
+                <div>
+                     <h6 class="header-text">FAVORITE AUTHORS</h6>
+                     <P>No authors have been added to your favorites.</P>   
+                </div>
+                <div>
+                    <h6 class="header-text">FAVORITE BOOKS</h6>
+                    <P>No books have been added to your favorites.</P>   
+               </div>
+               <div>
+                <h6 class="header-text">FAVORITE GENRES</h6>
+                <P>No genres have been added.</P>   
+           </div>
+                
+                    
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <footer class="nav-background-color">
+      <div class="row mb-5">
+          <div class="col-md-4 offset-md-1 col-sm-12">
+              <strong class="special">Sitemap</strong><br><br>
+              <ul class="nav flex-row ">
+                  <li class="nav-item mb-2 list"><a href="index.html" class="nav-link p-0 down">Home</a></li>
+                  <li class="nav-item mb-2 list"><a href="#library" class="nav-link p-0 down">&nbsp;Library</a></li>
+                  <li class="nav-item mb-2 list"><a href="#about" class="nav-link p-0 down">&nbsp;About</a></li>
+                  <li class="nav-item mb-2 list"><a href="#forum" class="nav-link p-0 down">Forum</a></li>
+                  <li class="nav-item mb-2 list"><a href="#contact" class="nav-link p-0 down">Contact</a></li>
+                  <li class="nav-item mb-2 list"><a href="about.html" class="nav-link p-0 down">Our team</a></li>
+              </ul>
+            </div>
+          
+
+  <div class="col-md-5 offset-md-1 my-auto col-sm-12 ">
+      <strong class="special">Special Thanks To</strong><br>
+      <div class="thanks nav flex-row">
+          <a class="nav-link down" href="http://www.iconka.com" >Designes from iconka </a>
+          <a  class="nav-link down leftalign" href="http://www.icons-land.com">Designes from icons-land</a>          
+          <a  class="nav-link down" href="http://www.freepik.com">Designes by starline / Freepik</a>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</footer>
+  </body>
+</html>
